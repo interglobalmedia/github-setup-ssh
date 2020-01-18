@@ -1,0 +1,16 @@
+{
+  "name": "github-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "help": "mdx-deck"
+  },
+  "author": "Maria D. Campbell",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^3.0.13"
+  }
+}
