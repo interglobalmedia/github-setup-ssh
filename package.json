@@ -4,14 +4,13 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "mdx-deck deck.mdx",
-        "build": "mdx-deck build deck.mdx",
-        "clean": "rm -rf public",
-        "help": "mdx-deck"
+        "slides": "npx reveal-md github-setup-ssh.md",
+        "customcss": "npx reveal-md github-setup-ssh.md --css custom.css"
     },
     "author": "Maria D. Campbell",
     "license": "MIT",
-    "devDependencies": {
-        "mdx-deck": "^3.0.13"
+    "devDependencies": {},
+    "dependencies": {
+        "reveal-md": "^4.0.0"
     }
 }
