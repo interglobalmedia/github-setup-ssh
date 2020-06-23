@@ -10,7 +10,5 @@
     "author": "Maria D. Campbell",
     "license": "MIT",
     "devDependencies": {},
-    "dependencies": {
-        "reveal-md": "^4.0.0"
-    }
+    "dependencies": {}
 }
