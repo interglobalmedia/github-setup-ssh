@@ -5,9 +5,9 @@
 <section class="section">
     <h2 class="sentence">Why SSH instead of HTTPS?</h2>
 
-When we use <code>HTTPS</code> when **communicating** with our **Github** <code>repositories</code>, **Github** will ***require*** you to **enter** your `username`, `email` and `password`.
+When we use `HTTPS` when **communicating** with our **Github** `repositories`, **Github** will ***require*** you to **enter** your `username`, `email` and `password`.
 
-**Credentials** are ***not*** `necessary`</code>` when **using** `SSH keys`. **SSH** consists of a `public` and `private key`. The `public key` is ***stored*** on **Github**, and the `private key` is ***stored*** in a **safe place** on your `computer`.
+**Credentials** are ***not*** `necessary` when **using** `SSH keys`. **SSH** consists of a `public` and `private key`. The `public key` is ***stored*** on **Github**, and the `private key` is ***stored*** in a **safe place** on your `computer`.
 
 `SSH keys` are ***used*** to **recognize** your `computer/device`.
 
@@ -16,7 +16,6 @@ When `paired` ***properly***, **Github** `recognizes` that your `computer` is th
 ***No other*** `computer` can ***do*** that **because** they **don't contain** either your `public` or `private key`. But the `key` ***component*** is the `private key` on your `device`.
 
 **Getting** to ***understand*** how `SSH Technology` **works** in the `process` of **setting up** a `profile` on **Github** makes the `process` of `pushing` **projects** to **Github** `easier` (and ***more*** `secure`).
-
 </section>
 
 ---
@@ -24,7 +23,8 @@ When `paired` ***properly***, **Github** `recognizes` that your `computer` is th
 <section class="section">
     <h2 class="sentence">What is SSH?</h2>
 
-`SSH` **stands** for `Secure Shell`, and it is a **method** for `secure remote login` ***from*** one `computer` to `another`.</li>
+
+`SSH` **stands** for `Secure Shell`, and it is a **method** for `secure remote login` ***from*** one `computer` to `another`.
 
 </section>
 
@@ -33,9 +33,10 @@ When `paired` ***properly***, **Github** `recognizes` that your `computer` is th
 <section class="section">
     <h2 class="sentence">Why Use SSH?</h2>
 
-`SSH` **provides** several alternative **options** for **strong** `authentication`, and it **protects** the **communication's** `security` and `integrity` with **strong** `encryption`.
+`SSH` **provides** several alternative **options** for ***strong*** `authentication`, and it **protects** the **communication's** `security` and `integrity` with ***strong*** `encryption`.
 
-`SSH` is a `secure` **alternative** to the ***non-protected*** `login protocols` such as [telnet](https://www.ssh.com/ssh/telnet) or [rlogin](https://www.ssh.com/ssh/rlogin) and ***insecure*** `file transfer methods` such as [FTP](https://www.ssh.com/ssh/ftp/).
+`SSH` is a ***secure alternative*** to the **non-protected** `login protocals` such as [telnet](https://www.ssh.com/ssh/telnet) or [rlogin](https://www.ssh.com/ssh/rlogin) and ***insecure*** `file transfer methods` such as [FTP](https://www.ssh.com/ssh/ftp/).
+
 </section>
 
 ---
@@ -62,7 +63,9 @@ The **pair** is usually **stored** in an `~/.ssh` **directory** which ***only ex
 
 ```shell
 cd ~/.ssh
-ls     # if you get anything back that ends in `.pub`, you might have SSH keys!<br/>
+ls 
+# if you get anything back that ends in `.pub`, 
+# you might have SSH keys!
 ```
 
 </section>
@@ -81,7 +84,7 @@ ssh-keygen -t rsa -C "youremail@example.com"
 # Enter the same passphrase again: [Type passphrase]
 ```
 
-If **everything** goes ***well***, you'll **receive** a `message` **stating** that your `keys` have been **saved**.
+If ***everything*** goes ***well***, you'll **receive** a `message` **stating** that your `keys` have been **saved**.
 
 </section>
 
@@ -116,12 +119,10 @@ The `agent` can then **use** the `keys` to `log` into other `servers` **without 
 <section class="section">
     <h2 class="sentence">Final Steps: Copying Your Key</h2>
 
-Now that you have **generated** and **stored** your `SSH` **key pair**, you **need** to ***copy*** your `public key`. The `instructions` ***assume*** that you have **named** your **public key** `id_rsa.pub` (the ***default*** `name`).
-
-Please ***ignore*** the `single quotes`!
+***Now*** that you have **generated** and **stored** your `SSH` **key pair**, you **need** to ***copy*** your `public key`. The `instructions` ***assume*** that you have **named** your **public key** `id_rsa.pub` (the ***default*** `name`).
 
 ```shell
-'pbcopy < ~/.ssh/id_rsa.pub'
+pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 </section>
@@ -131,11 +132,11 @@ Please ***ignore*** the `single quotes`!
 <section class="section">
     <h2 class="sentence">Final Steps: Adding Keys to Your Account(s)</h2>
 
-**If** you are ***adding*** the **copied** `public key` to **Github**, go to `Settings -> SSH Keys -> Add SSH Key` on **Github.com**.
+If you are ***adding*** the **copied** `public key` to **Github**, ***go to*** `Settings -> SSH Keys -> Add SSH Key` on `Github.com`.
 
-**Paste** what you have **copied** into the `text area`, and **hit** the `"Add Key"` **button**.
+***Paste*** what you have **copied** into the `text area`, and ***hit*** the `"Add Key"` **button**.
 
-**Now** you can start **using** the `SSH URL` on **Github** *`instead`* of `HTTPS`.
+***Now*** you can ***start using*** the `SSH URL` on `Github` instead of `HTTPS`.
 
 </section>
 
