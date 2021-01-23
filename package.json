@@ -1,5 +1,5 @@
 {
-    "name": "github-setup",
+    "name": "github-setup-ssh",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -9,8 +9,8 @@
     },
     "author": "Maria D. Campbell",
     "license": "MIT",
-    "devDependencies": {},
-    "dependencies": {
+    "devDependencies": {
         "reveal-md": "^4.3.0"
-    }
+    },
+    "dependencies": {}
 }
